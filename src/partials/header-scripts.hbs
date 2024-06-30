@@ -1,1 +1,16 @@
 {{!-- Add header scripts here --}}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const variables = {
+      siteRootPath: '{{siteRootPath}}',
+      uiRootPath: '{{uiRootPath}}',
+      siteTitle: '{{site.title}}',
+      siteUrl: '{{site.url}}',
+      startPage: '{{site.start_page}}',
+      envSiteSearchProvider: '{{env.SITE_SEARCH_PROVIDER}}'
+      // 필요한 다른 변수들을 추가할 수 있습니다.
+    };
+
+    console.log('Antora Variables:', variables);
+  });
+</script>
